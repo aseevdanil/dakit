@@ -17,6 +17,7 @@
 #import "dakit/CGGeometry+DA.h"
 #import "dakit/CGContext+DA.h"
 #import "dakit/CGImage+DA.h"
+#import "dakit/CGImage+CGImageShape.h"
 #import "dakit/NSNumber+CG.h"
 
 #import "dakit/NSObject+UserContextAndTag.h"
@@ -35,6 +36,7 @@
 #import "dakit/NSUserDefaults+DA.h"
 #import "dakit/NSApplicationDirectory.h"
 #import "dakit/DAUUID.h"
+#import "dakit/MKGeometry+DA.h"
 
 #import "dakit/UIGeometry+DA.h"
 #import "dakit/UIColor+DA.h"

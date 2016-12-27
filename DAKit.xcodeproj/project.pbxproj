@@ -14,8 +14,8 @@
 		03526F7E1DF82268008E1EF3 /* CGContext+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F251DF82268008E1EF3 /* CGContext+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03526F7F1DF82268008E1EF3 /* CGContext+DA.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F261DF82268008E1EF3 /* CGContext+DA.m */; };
 		03526F801DF82268008E1EF3 /* CGGeometry+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F271DF82268008E1EF3 /* CGGeometry+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		03526F811DF82268008E1EF3 /* CGImage+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F281DF82268008E1EF3 /* CGImage+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		03526F821DF82268008E1EF3 /* CGImage+DA.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F291DF82268008E1EF3 /* CGImage+DA.m */; };
+		03526F811DF82268008E1EF3 /* CGImage+CGImageShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F281DF82268008E1EF3 /* CGImage+CGImageShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03526F821DF82268008E1EF3 /* CGImage+CGImageShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F291DF82268008E1EF3 /* CGImage+CGImageShape.m */; };
 		03526F831DF82268008E1EF3 /* NSNumber+CG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F2A1DF82268008E1EF3 /* NSNumber+CG.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03526F841DF82268008E1EF3 /* NSNumber+CG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F2B1DF82268008E1EF3 /* NSNumber+CG.m */; };
 		03526F851DF82268008E1EF3 /* DADebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F2D1DF82268008E1EF3 /* DADebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -92,7 +92,7 @@
 		03526FE01DF824F7008E1EF3 /* DAObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F321DF82268008E1EF3 /* DAObjectiveC.m */; };
 		03526FE11DF824FB008E1EF3 /* CFUUID+DA.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F221DF82268008E1EF3 /* CFUUID+DA.m */; };
 		03526FE21DF82501008E1EF3 /* CGContext+DA.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F261DF82268008E1EF3 /* CGContext+DA.m */; };
-		03526FE31DF82501008E1EF3 /* CGImage+DA.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F291DF82268008E1EF3 /* CGImage+DA.m */; };
+		03526FE31DF82501008E1EF3 /* CGImage+CGImageShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F291DF82268008E1EF3 /* CGImage+CGImageShape.m */; };
 		03526FE41DF82501008E1EF3 /* NSNumber+CG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F2B1DF82268008E1EF3 /* NSNumber+CG.m */; };
 		03526FE51DF8250F008E1EF3 /* DAUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F351DF82268008E1EF3 /* DAUUID.m */; };
 		03526FE61DF8250F008E1EF3 /* NSArray+DA.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F381DF82268008E1EF3 /* NSArray+DA.m */; };
@@ -120,7 +120,7 @@
 		03526FFF1DF827E1008E1EF3 /* CLLocation+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F231DF82268008E1EF3 /* CLLocation+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		035270001DF827F3008E1EF3 /* CGContext+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F251DF82268008E1EF3 /* CGContext+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		035270011DF827F3008E1EF3 /* CGGeometry+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F271DF82268008E1EF3 /* CGGeometry+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		035270021DF827F3008E1EF3 /* CGImage+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F281DF82268008E1EF3 /* CGImage+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		035270021DF827F3008E1EF3 /* CGImage+CGImageShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F281DF82268008E1EF3 /* CGImage+CGImageShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		035270031DF827F3008E1EF3 /* NSNumber+CG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F2A1DF82268008E1EF3 /* NSNumber+CG.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		035270041DF827F3008E1EF3 /* DAUUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F341DF82268008E1EF3 /* DAUUID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		035270051DF827F3008E1EF3 /* NSApplicationDirectory.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F361DF82268008E1EF3 /* NSApplicationDirectory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -148,7 +148,7 @@
 		0352702E1DF82AF1008E1EF3 /* DAObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F321DF82268008E1EF3 /* DAObjectiveC.m */; };
 		0352702F1DF82AF1008E1EF3 /* CFUUID+DA.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F221DF82268008E1EF3 /* CFUUID+DA.m */; };
 		035270301DF82AF1008E1EF3 /* CGContext+DA.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F261DF82268008E1EF3 /* CGContext+DA.m */; };
-		035270311DF82AF1008E1EF3 /* CGImage+DA.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F291DF82268008E1EF3 /* CGImage+DA.m */; };
+		035270311DF82AF1008E1EF3 /* CGImage+CGImageShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F291DF82268008E1EF3 /* CGImage+CGImageShape.m */; };
 		035270321DF82AF1008E1EF3 /* NSNumber+CG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F2B1DF82268008E1EF3 /* NSNumber+CG.m */; };
 		035270331DF82B07008E1EF3 /* DAUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F351DF82268008E1EF3 /* DAUUID.m */; };
 		035270341DF82B07008E1EF3 /* NSArray+DA.m in Sources */ = {isa = PBXBuildFile; fileRef = 03526F381DF82268008E1EF3 /* NSArray+DA.m */; };
@@ -177,7 +177,7 @@
 		0352704B1DF82BBD008E1EF3 /* CLLocation+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F231DF82268008E1EF3 /* CLLocation+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0352704C1DF82BBD008E1EF3 /* CGContext+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F251DF82268008E1EF3 /* CGContext+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0352704D1DF82BBD008E1EF3 /* CGGeometry+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F271DF82268008E1EF3 /* CGGeometry+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0352704E1DF82BBD008E1EF3 /* CGImage+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F281DF82268008E1EF3 /* CGImage+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0352704E1DF82BBD008E1EF3 /* CGImage+CGImageShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F281DF82268008E1EF3 /* CGImage+CGImageShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0352704F1DF82BBD008E1EF3 /* NSNumber+CG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F2A1DF82268008E1EF3 /* NSNumber+CG.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		035270501DF82BBD008E1EF3 /* DAUUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F341DF82268008E1EF3 /* DAUUID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		035270511DF82BBD008E1EF3 /* NSApplicationDirectory.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F361DF82268008E1EF3 /* NSApplicationDirectory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -218,6 +218,9 @@
 		0352709B1DF83137008E1EF3 /* UITextView+Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F731DF82268008E1EF3 /* UITextView+Layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0352709C1DF83137008E1EF3 /* UIView+FirstResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F771DF82268008E1EF3 /* UIView+FirstResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0352709D1DF83137008E1EF3 /* UIViewController+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F791DF82268008E1EF3 /* UIViewController+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		038A479D1E129E7A009E7FFA /* CGImage+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 038A479B1E129E7A009E7FFA /* CGImage+DA.h */; };
+		038A479E1E129E7A009E7FFA /* CGImage+DA.m in Sources */ = {isa = PBXBuildFile; fileRef = 038A479C1E129E7A009E7FFA /* CGImage+DA.m */; };
+		038A47A11E129F2B009E7FFA /* MKGeometry+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 038A479F1E129F2B009E7FFA /* MKGeometry+DA.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -230,8 +233,8 @@
 		03526F251DF82268008E1EF3 /* CGContext+DA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGContext+DA.h"; sourceTree = "<group>"; };
 		03526F261DF82268008E1EF3 /* CGContext+DA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGContext+DA.m"; sourceTree = "<group>"; };
 		03526F271DF82268008E1EF3 /* CGGeometry+DA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+DA.h"; sourceTree = "<group>"; };
-		03526F281DF82268008E1EF3 /* CGImage+DA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGImage+DA.h"; sourceTree = "<group>"; };
-		03526F291DF82268008E1EF3 /* CGImage+DA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGImage+DA.m"; sourceTree = "<group>"; };
+		03526F281DF82268008E1EF3 /* CGImage+CGImageShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGImage+CGImageShape.h"; sourceTree = "<group>"; };
+		03526F291DF82268008E1EF3 /* CGImage+CGImageShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGImage+CGImageShape.m"; sourceTree = "<group>"; };
 		03526F2A1DF82268008E1EF3 /* NSNumber+CG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+CG.h"; sourceTree = "<group>"; };
 		03526F2B1DF82268008E1EF3 /* NSNumber+CG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+CG.m"; sourceTree = "<group>"; };
 		03526F2D1DF82268008E1EF3 /* DADebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DADebug.h; sourceTree = "<group>"; };
@@ -311,6 +314,9 @@
 		035270221DF8298D008E1EF3 /* DAWatchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DAWatchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0352702A1DF82A21008E1EF3 /* DAWatchKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAWatchKit.h; sourceTree = "<group>"; };
 		0352702B1DF82A21008E1EF3 /* DAWatchKitInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DAWatchKitInfo.plist; sourceTree = "<group>"; };
+		038A479B1E129E7A009E7FFA /* CGImage+DA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGImage+DA.h"; sourceTree = "<group>"; };
+		038A479C1E129E7A009E7FFA /* CGImage+DA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGImage+DA.m"; sourceTree = "<group>"; };
+		038A479F1E129F2B009E7FFA /* MKGeometry+DA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKGeometry+DA.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,8 +397,10 @@
 				03526F251DF82268008E1EF3 /* CGContext+DA.h */,
 				03526F261DF82268008E1EF3 /* CGContext+DA.m */,
 				03526F271DF82268008E1EF3 /* CGGeometry+DA.h */,
-				03526F281DF82268008E1EF3 /* CGImage+DA.h */,
-				03526F291DF82268008E1EF3 /* CGImage+DA.m */,
+				038A479B1E129E7A009E7FFA /* CGImage+DA.h */,
+				038A479C1E129E7A009E7FFA /* CGImage+DA.m */,
+				03526F281DF82268008E1EF3 /* CGImage+CGImageShape.h */,
+				03526F291DF82268008E1EF3 /* CGImage+CGImageShape.m */,
 				03526F2A1DF82268008E1EF3 /* NSNumber+CG.h */,
 				03526F2B1DF82268008E1EF3 /* NSNumber+CG.m */,
 			);
@@ -446,6 +454,7 @@
 				03526F521DF82268008E1EF3 /* NSURL+UbiquitousItemProperty.m */,
 				03526F531DF82268008E1EF3 /* NSUserDefaults+DA.h */,
 				03526F541DF82268008E1EF3 /* NSUserDefaults+DA.m */,
+				038A479F1E129F2B009E7FFA /* MKGeometry+DA.h */,
 			);
 			path = dans;
 			sourceTree = "<group>";
@@ -500,6 +509,7 @@
 				032F47F41DF855E400FF5D41 /* DAKit.h in Headers */,
 				03526FC51DF82268008E1EF3 /* UISwitch+Layout.h in Headers */,
 				03526FC31DF82268008E1EF3 /* UISplitViewController+DA.h in Headers */,
+				038A47A11E129F2B009E7FFA /* MKGeometry+DA.h in Headers */,
 				03526FAC1DF82268008E1EF3 /* CATextLayer+Layout.h in Headers */,
 				03526FA21DF82268008E1EF3 /* NSStream+DA.h in Headers */,
 				03526F891DF82268008E1EF3 /* DAObjectiveC.h in Headers */,
@@ -534,10 +544,11 @@
 				03526FBA1DF82268008E1EF3 /* UIGeometry+DA.h in Headers */,
 				03526FB01DF82268008E1EF3 /* UIBarButtonItem+DA.h in Headers */,
 				03526F7E1DF82268008E1EF3 /* CGContext+DA.h in Headers */,
-				03526F811DF82268008E1EF3 /* CGImage+DA.h in Headers */,
+				03526F811DF82268008E1EF3 /* CGImage+CGImageShape.h in Headers */,
 				03526F921DF82268008E1EF3 /* NSData+Hash.h in Headers */,
 				03526FB81DF82268008E1EF3 /* UIFont+DA.h in Headers */,
 				03526FBD1DF82268008E1EF3 /* UILabel+Layout.h in Headers */,
+				038A479D1E129E7A009E7FFA /* CGImage+DA.h in Headers */,
 				03526F881DF82268008E1EF3 /* DAMath.h in Headers */,
 				03526F901DF82268008E1EF3 /* NSCalendar+DA.h in Headers */,
 				03526FBB1DF82268008E1EF3 /* UIImage+Converting.h in Headers */,
@@ -568,7 +579,7 @@
 				035270001DF827F3008E1EF3 /* CGContext+DA.h in Headers */,
 				035270011DF827F3008E1EF3 /* CGGeometry+DA.h in Headers */,
 				035270941DF83137008E1EF3 /* CATextLayer+Layout.h in Headers */,
-				035270021DF827F3008E1EF3 /* CGImage+DA.h in Headers */,
+				035270021DF827F3008E1EF3 /* CGImage+CGImageShape.h in Headers */,
 				035270031DF827F3008E1EF3 /* NSNumber+CG.h in Headers */,
 				035270981DF83137008E1EF3 /* UISplitViewController+DA.h in Headers */,
 				035270041DF827F3008E1EF3 /* DAUUID.h in Headers */,
@@ -609,7 +620,7 @@
 				0352704B1DF82BBD008E1EF3 /* CLLocation+DA.h in Headers */,
 				0352704C1DF82BBD008E1EF3 /* CGContext+DA.h in Headers */,
 				0352704D1DF82BBD008E1EF3 /* CGGeometry+DA.h in Headers */,
-				0352704E1DF82BBD008E1EF3 /* CGImage+DA.h in Headers */,
+				0352704E1DF82BBD008E1EF3 /* CGImage+CGImageShape.h in Headers */,
 				0352704F1DF82BBD008E1EF3 /* NSNumber+CG.h in Headers */,
 				035270501DF82BBD008E1EF3 /* DAUUID.h in Headers */,
 				035270511DF82BBD008E1EF3 /* NSApplicationDirectory.h in Headers */,
@@ -758,6 +769,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				038A479E1E129E7A009E7FFA /* CGImage+DA.m in Sources */,
 				03526F8C1DF82268008E1EF3 /* DAUUID.m in Sources */,
 				03526FCA1DF82269008E1EF3 /* UITextView+Layout.m in Sources */,
 				03526FA91DF82268008E1EF3 /* NSURL+UbiquitousItemProperty.m in Sources */,
@@ -769,7 +781,7 @@
 				03526F9D1DF82268008E1EF3 /* NSIndexSet+DA.m in Sources */,
 				03526FB51DF82268008E1EF3 /* UIControl+DA.m in Sources */,
 				03526FB31DF82268008E1EF3 /* UIColor+DA.m in Sources */,
-				03526F821DF82268008E1EF3 /* CGImage+DA.m in Sources */,
+				03526F821DF82268008E1EF3 /* CGImage+CGImageShape.m in Sources */,
 				03526FC41DF82268008E1EF3 /* UISplitViewController+DA.m in Sources */,
 				03526FC61DF82268008E1EF3 /* UISwitch+Layout.m in Sources */,
 				03526FAD1DF82268008E1EF3 /* CATextLayer+Layout.m in Sources */,
@@ -823,7 +835,7 @@
 				0352708F1DF8311A008E1EF3 /* UISwitch+Layout.m in Sources */,
 				03526FEC1DF8250F008E1EF3 /* NSIndexSet+DA.m in Sources */,
 				03526FE71DF8250F008E1EF3 /* NSCalendar+DA.m in Sources */,
-				03526FE31DF82501008E1EF3 /* CGImage+DA.m in Sources */,
+				03526FE31DF82501008E1EF3 /* CGImage+CGImageShape.m in Sources */,
 				03526FE81DF8250F008E1EF3 /* NSData+Hash.m in Sources */,
 				0352708C1DF8311A008E1EF3 /* UILabel+Layout.m in Sources */,
 				03526FE11DF824FB008E1EF3 /* CFUUID+DA.m in Sources */,
@@ -858,7 +870,7 @@
 				035270381DF82B07008E1EF3 /* NSDictionary+DA.m in Sources */,
 				0352703A1DF82B07008E1EF3 /* NSIndexSet+DA.m in Sources */,
 				035270351DF82B07008E1EF3 /* NSCalendar+DA.m in Sources */,
-				035270311DF82AF1008E1EF3 /* CGImage+DA.m in Sources */,
+				035270311DF82AF1008E1EF3 /* CGImage+CGImageShape.m in Sources */,
 				035270361DF82B07008E1EF3 /* NSData+Hash.m in Sources */,
 				0352702F1DF82AF1008E1EF3 /* CFUUID+DA.m in Sources */,
 				035270321DF82AF1008E1EF3 /* NSNumber+CG.m in Sources */,

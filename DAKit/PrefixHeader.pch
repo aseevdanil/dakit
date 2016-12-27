@@ -17,6 +17,7 @@
 #import "dacg/CGGeometry+DA.h"
 #import "dacg/CGContext+DA.h"
 #import "dacg/CGImage+DA.h"
+#import "dacg/CGImage+CGImageShape.h"
 #import "dacg/NSNumber+CG.h"
 
 #import "dans/NSObject+UserContextAndTag.h"
@@ -35,6 +36,7 @@
 #import "dans/NSUserDefaults+DA.h"
 #import "dans/NSApplicationDirectory.h"
 #import "dans/DAUUID.h"
+#import "dans/MKGeometry+DA.h"
 
 #import "daui/UIGeometry+DA.h"
 #import "daui/UIColor+DA.h"

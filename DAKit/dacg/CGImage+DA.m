@@ -1,55 +1,38 @@
 //
 //  CGImage+DA.m
-//  dakit
+//  DAKit
 //
-//  Created by da on 13.12.12.
-//  Copyright (c) 2012 Aseev Danil. All rights reserved.
+//  Created by da on 27.12.16.
+//  Copyright © 2016 Aseev Danil. All rights reserved.
 //
 
 #import "CGImage+DA.h"
 
 
 
-CGImageRef CGImageCreateShapedImage(CGSize size, CGImageShape shape, CGColorRef fillColor, CGColorRef strokeColor, CGFloat lineWidth, CGFloat cornerRadius, CGPathDrawingMode drawingMode)
+CGImageRef CGImageCreateFilledImage(CGImageRef image, CGColorRef fillColor)
 {
-	size = CGSizeIntegral(size);
-	lineWidth = (CGFloat)(NSInteger) lineWidth;
-	cornerRadius = (CGFloat)(NSInteger) cornerRadius;
-	if (CGSizeEqualToSize(size, CGSizeZero))
+	if (!image)
 		return NULL;
 	
-	CGImageRef image = NULL;
 	CGColorSpaceRef space = NULL;
 	CGContextRef context = NULL;
+	
+	CGFloat width = CGImageGetWidth(image), height = CGImageGetHeight(image);
 	
 	space = CGColorSpaceCreateDeviceRGB();
 	if (!space)
 		goto cleanup;
 	
-	context = CGBitmapContextCreate(NULL, size.width, size.height, 8, size.width * 4, space, (CGBitmapInfo) kCGImageAlphaPremultipliedLast);
+	context = CGBitmapContextCreate(NULL, width, height, 8, 0, space, kCGImageAlphaPremultipliedLast);
 	if (!context)
 		goto cleanup;
 	
-	CGRect rect = {lineWidth / 2, lineWidth / 2, size.width - lineWidth, size.height - lineWidth};
-	switch (shape)
-	{
-		case kCGImageShapeRoundedRect:
-			CGContextAddRoundedRect(context, rect, cornerRadius);
-			break;
-		case kCGImageShapeEllipse:
-			CGContextAddEllipseInRect(context, rect);
-			break;
-		case kCGImageShapeRectangle:
-		default:
-			CGContextAddRect(context, rect);
-			break;
-	}
+	CGRect rect = CGRectMake(0., 0., width, height);
+	CGContextClipToMask(context, rect, image);
 	if (fillColor)
 		CGContextSetFillColorWithColor(context, fillColor);
-	if (strokeColor)
-		CGContextSetStrokeColorWithColor(context, strokeColor);
-	CGContextSetLineWidth(context, lineWidth);
-	CGContextDrawPath(context, drawingMode);
+	CGContextFillRect(context, rect);
 	
 	image = CGBitmapContextCreateImage(context);
 	
@@ -60,22 +43,4 @@ cleanup:
 		CGColorSpaceRelease(space);
 	
 	return image;
-}
-
-
-CGImageRef CGImageCreateRectangleImage(CGSize size, CGColorRef fillColor, CGColorRef strokeColor, CGFloat lineWidth, CGPathDrawingMode drawingMode)
-{
-	return CGImageCreateShapedImage(size, kCGImageShapeRectangle, fillColor, strokeColor, lineWidth, 0., drawingMode);
-}
-
-
-CGImageRef CGImageCreateRoundedRectImage(CGSize size, CGColorRef fillColor, CGColorRef strokeColor, CGFloat lineWidth, CGFloat cornerRadius, CGPathDrawingMode drawingMode)
-{
-	return CGImageCreateShapedImage(size, kCGImageShapeRoundedRect, fillColor, strokeColor, lineWidth, cornerRadius, drawingMode);
-}
-
-
-CGImageRef CGImageCreateEllipseImage(CGSize size, CGColorRef fillColor, CGColorRef strokeColor, CGFloat lineWidth, CGPathDrawingMode drawingMode)
-{
-	return CGImageCreateShapedImage(size, kCGImageShapeEllipse, fillColor, strokeColor, lineWidth, 0., drawingMode);
 }
