@@ -20,7 +20,7 @@
  */
 #import <TargetConditionals.h>
 
-FOUNDATION_EXTERN int IsInDebugger(void);
+int IsInDebugger(void);
 #define DASSERT(xx) { if (!(xx)) { DPRINT(@"NIDASSERT failed: %s", #xx); \
 if (DebugAssertionsShouldBreak && IsInDebugger()) { raise(SIGTRAP); } } \
 } ((void)0)
@@ -39,7 +39,7 @@ if (DebugAssertionsShouldBreak && IsInDebugger()) { raise(SIGTRAP); } } \
  * The default value is YES.
  */
 #ifdef DEBUG
-FOUNDATION_EXTERN BOOL DebugAssertionsShouldBreak;
+extern BOOL DebugAssertionsShouldBreak;
 #endif // #ifdef DEBUG
 
 /**
