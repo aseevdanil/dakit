@@ -218,9 +218,9 @@
 		0352709B1DF83137008E1EF3 /* UITextView+Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F731DF82268008E1EF3 /* UITextView+Layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0352709C1DF83137008E1EF3 /* UIView+FirstResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F771DF82268008E1EF3 /* UIView+FirstResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0352709D1DF83137008E1EF3 /* UIViewController+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 03526F791DF82268008E1EF3 /* UIViewController+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		038A479D1E129E7A009E7FFA /* CGImage+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 038A479B1E129E7A009E7FFA /* CGImage+DA.h */; };
+		038A479D1E129E7A009E7FFA /* CGImage+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 038A479B1E129E7A009E7FFA /* CGImage+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		038A479E1E129E7A009E7FFA /* CGImage+DA.m in Sources */ = {isa = PBXBuildFile; fileRef = 038A479C1E129E7A009E7FFA /* CGImage+DA.m */; };
-		038A47A11E129F2B009E7FFA /* MKGeometry+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 038A479F1E129F2B009E7FFA /* MKGeometry+DA.h */; };
+		038A47A11E129F2B009E7FFA /* MKGeometry+DA.h in Headers */ = {isa = PBXBuildFile; fileRef = 038A479F1E129F2B009E7FFA /* MKGeometry+DA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -506,10 +506,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				038A479D1E129E7A009E7FFA /* CGImage+DA.h in Headers */,
+				038A47A11E129F2B009E7FFA /* MKGeometry+DA.h in Headers */,
 				032F47F41DF855E400FF5D41 /* DAKit.h in Headers */,
 				03526FC51DF82268008E1EF3 /* UISwitch+Layout.h in Headers */,
 				03526FC31DF82268008E1EF3 /* UISplitViewController+DA.h in Headers */,
-				038A47A11E129F2B009E7FFA /* MKGeometry+DA.h in Headers */,
 				03526FAC1DF82268008E1EF3 /* CATextLayer+Layout.h in Headers */,
 				03526FA21DF82268008E1EF3 /* NSStream+DA.h in Headers */,
 				03526F891DF82268008E1EF3 /* DAObjectiveC.h in Headers */,
@@ -548,7 +549,6 @@
 				03526F921DF82268008E1EF3 /* NSData+Hash.h in Headers */,
 				03526FB81DF82268008E1EF3 /* UIFont+DA.h in Headers */,
 				03526FBD1DF82268008E1EF3 /* UILabel+Layout.h in Headers */,
-				038A479D1E129E7A009E7FFA /* CGImage+DA.h in Headers */,
 				03526F881DF82268008E1EF3 /* DAMath.h in Headers */,
 				03526F901DF82268008E1EF3 /* NSCalendar+DA.h in Headers */,
 				03526FBB1DF82268008E1EF3 /* UIImage+Converting.h in Headers */,
